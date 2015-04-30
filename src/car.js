@@ -5,6 +5,7 @@ function Car(make, model, year, color, state, previousOwners, currentOwner, pass
   this.previousOwners = [];
   this.currentOwner = currentOwner;
   this.passengers = [];
+  this.state = "off";
 }
 
 // myCar = new Car("Dodge","Charger", 2015, "Red");
