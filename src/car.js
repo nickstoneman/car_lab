@@ -1,7 +1,8 @@
-function Car(make, model, year, color, state, previousOwners){
+function Car(make, model, year, color, state, previousOwners, currentOwner){
   this.year = year;
   this.state = state;
   this.previousOwners = previousOwners;
+  this.currentOwner = currentOwner;
 }
 
 // myCar = new Car("Dodge","Charger", 2015, "Red");
