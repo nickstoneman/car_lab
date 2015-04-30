@@ -82,7 +82,7 @@ describe('Car', function(){
     });
 
 /////////////////////////////
-    xit('should only modify passengers array if car is on', function(){
+    it('should only modify passengers array if car is on', function(){
       // myCar.off();
       myCar.pickUp("john");
       expect(myCar.passengers[0]).to.be.empty;

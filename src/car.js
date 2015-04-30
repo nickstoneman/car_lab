@@ -32,7 +32,11 @@ Car.prototype.off = function(){
 }
 
 Car.prototype.pickUp = function(personPickup) {
-  this.passengers.push(personPickup)
+  
+  //if the car is on add the personPickup to passengers array.
+  if (this.state === "on") {
+    this.passengers.push(personPickup)
+  }
 //   this.passengers.push(this.passenger)
 //   if (car = "on") {
 //     this.passengers.push(this.passenger))
