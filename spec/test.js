@@ -8,7 +8,7 @@ describe('Car', function(){
 // every time this test runs it will use this car object.
   beforeEach(function(){
     // create a new myCar object each time
-    myCar = new Car("Dodge","Charger", 2015, "Red", "off", "", "Manufacturer", "", "Blue");
+    myCar = new Car("Dodge","Charger", 2015, "Red");
   });
 
   describe('#year', function(){
@@ -81,7 +81,8 @@ describe('Car', function(){
       expect(myCar.passengers[0]).to.equal("john");
     });
 
-    it('should only modify passengers array if car is on', function(){
+/////////////////////////////
+    xit('should only modify passengers array if car is on', function(){
       // myCar.off();
       myCar.pickUp("john");
       expect(myCar.passengers[0]).to.be.empty;

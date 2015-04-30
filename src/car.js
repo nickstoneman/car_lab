@@ -1,9 +1,13 @@
 // How many things can I put in this function?
-function Car(make, model, year, color, state, previousOwners, currentOwner, passengers) {
+function Car(make, model, year, color) {
+  this.make = make;
+  this.model = model;
   this.year = year;
-  this.state = state;
+  this.color = color;
+
+  this.state = "off";
   this.previousOwners = [];
-  this.currentOwner = currentOwner;
+  this.currentOwner = "Manufacturer";
   this.passengers = [];
   // this.state = "on";
 }
@@ -27,8 +31,14 @@ Car.prototype.off = function(){
   this.state = "off"
 }
 
-Car.prototype.pickUp = function(newPassenger){
-    this.passengers.push(this.passenger);
-  }
+Car.prototype.pickUp = function(personPickup) {
+  this.passengers.push(personPickup)
+//   this.passengers.push(this.passenger)
+//   if (car = "on") {
+//     this.passengers.push(this.passenger))
+// } else if {
+//   car = "off"
+}
+
 
 module.exports=Car;
