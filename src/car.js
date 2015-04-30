@@ -5,7 +5,7 @@ function Car(make, model, year, color, state, previousOwners, currentOwner, pass
   this.previousOwners = [];
   this.currentOwner = currentOwner;
   this.passengers = [];
-  this.state = "off";
+  // this.state = "on";
 }
 
 // myCar = new Car("Dodge","Charger", 2015, "Red");
@@ -19,5 +19,12 @@ Car.prototype.paint = function(newColor){
   this.color = "Blue"
 };
 
+Car.prototype.start = function(){
+  this.state = "on"
+}
+
+Car.prototype.off = function(){
+  this.state = "off"
+}
 
 module.exports=Car;

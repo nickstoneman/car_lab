@@ -59,16 +59,16 @@ describe('Car', function(){
       expect(myCar.color).to.equal("Blue");
     });
   });
-
+// deleted the x
   describe('#start', function(){
-    xit('should update the state to on', function(){
+    it('should update the state to on', function(){
       myCar.start();
       expect(myCar.state).to.equal("on");
     });
   });
-
+// deleted the x
   describe('#off', function(){
-    xit('should update the state to off', function(){
+    it('should update the state to off', function(){
       myCar.off();
       expect(myCar.state).to.equal("off");
     });
