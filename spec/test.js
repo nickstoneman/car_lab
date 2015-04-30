@@ -8,7 +8,7 @@ describe('Car', function(){
 // every time this test runs it will use this car object.
   beforeEach(function(){
     // create a new myCar object each time
-    myCar = new Car("Dodge","Charger", 2015, "Red", "off", "", "Manufacturer", "");
+    myCar = new Car("Dodge","Charger", 2015, "Red", "off", "", "Manufacturer", "", "Blue");
   });
 
   describe('#year', function(){
@@ -52,9 +52,9 @@ describe('Car', function(){
       expect(myCar.currentOwner).to.equal("Charlie");
     });
   });
-
+// deleted the x
   describe('#paint', function(){
-    xit('should update the color of myCar', function(){
+    it('should update the color of myCar', function(){
       myCar.paint("Blue");
       expect(myCar.color).to.equal("Blue");
     });
