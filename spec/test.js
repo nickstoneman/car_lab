@@ -22,7 +22,7 @@ describe('Car', function(){
       expect(myCar.state).to.equal("off");
     });
   });
-// deleted the x
+
   describe('#previousOwners', function(){
     it('should exist and initially be empty', function(){
       expect(myCar.previousOwners).to.exist.to.be.empty;
@@ -40,14 +40,14 @@ describe('Car', function(){
       expect(myCar.passengers).to.exist.to.be.empty;
     });
   });
-
+// deleted the x
   describe('#sale', function(){
-    xit('should move currentOwner to previousOwners array', function(){
+    it('should move currentOwner to previousOwners array', function(){
       myCar.sale("Charlie");
       expect(myCar.previousOwners[0]).to.equal("Manufacturer");
     });
-
-    xit('should update currentOwner with the new owner', function(){
+// deleted the x
+    it('should update currentOwner with the new owner', function(){
       myCar.sale("Charlie");
       expect(myCar.currentOwner).to.equal("Charlie");
     });
