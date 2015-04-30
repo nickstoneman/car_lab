@@ -8,7 +8,7 @@ describe('Car', function(){
 // every time this test runs it will use this car object.
   beforeEach(function(){
     // create a new myCar object each time
-    myCar = new Car("Dodge","Charger", 2015, "Red", "off", "", "Manufacturer");
+    myCar = new Car("Dodge","Charger", 2015, "Red", "off", "", "Manufacturer", "");
   });
 
   describe('#year', function(){
@@ -34,9 +34,9 @@ describe('Car', function(){
       expect(myCar.currentOwner).to.equal("Manufacturer");
     });
   });
-
+// deleted the x
   describe('#passengers', function(){
-    xit('should exist and initially be empty', function(){
+    it('should exist and initially be empty', function(){
       expect(myCar.passengers).to.exist.to.be.empty;
     });
   });
