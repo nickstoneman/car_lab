@@ -27,4 +27,8 @@ Car.prototype.off = function(){
   this.state = "off"
 }
 
+Car.prototype.pickUp = function(newPassenger){
+    this.passengers.push(this.passenger);
+  }
+
 module.exports=Car;

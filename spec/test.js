@@ -73,15 +73,15 @@ describe('Car', function(){
       expect(myCar.state).to.equal("off");
     });
   });
-
+// deleted the x
   describe('#pickUp', function(){
-    xit('should add the passenger to the passengers array', function(){
+    it('should add the passenger to the passengers array', function(){
       myCar.start();
       myCar.pickUp("john");
       expect(myCar.passengers[0]).to.equal("john");
     });
 
-    xit('should only modify passengers array if car is on', function(){
+    it('should only modify passengers array if car is on', function(){
       // myCar.off();
       myCar.pickUp("john");
       expect(myCar.passengers[0]).to.be.empty;
